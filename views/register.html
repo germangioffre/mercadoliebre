@@ -39,15 +39,35 @@
         </header>
         <main class="register">
             <form action="/" method="POST">
+                <br>
+                <h3> Formulario de Registro </h3>
+                <br>
+
+                <h4>Ingresá tu Nombre y Apellido</h4>
+
                 <input type="text" name="name" placeholder="Nombre y apellido">
+                <br>
+                <br>
+                <h4>Ingresá tu Usuario</h4>
+
                 <input type="text" name="user" placeholder="Nombre de usuario">
+                <br>
+                <br>
+                <h4>Ingresá tu Mail</h4>
+
                 <input type="email" name="email" placeholder="E-mail">
+                <br>
                 <br>
                 <label for="birth_date"><b>Fecha de nacimiento</b></label>
                 <br>
                 <input type="date" name="birth_date" id="birth_date">
                 <br>
+                <br>
+                <label for="domicilio"><b>Domicilio</b></label>
+                <br>
                 <input type="text" name="addres" placeholder="Domicilio">
+                <br>
+                <br>
                 <h4>Perfil del usuario</h4>
                 <div class="profile">
                     <input type="radio" name="profile" value="buy" id="buy">
@@ -55,6 +75,7 @@
                     <input type="radio" name="profile" value="sell" id="sell">
                     <label for="sell">Vendedor</label>
                 </div>
+                <br>
 
                 <h4>Intereses</h4>
                 <div class="interests">
@@ -79,13 +100,17 @@
                         <label for="e">Vida sana</label>
                     </div>
                 </div>
-                
-                <h4>Elegí tu foto de usuario</h4>
+                <br>
+
+                <h4>Ingresá tu foto de usuario</h4>
                 <input type="file" name="avatar">
                 <br>
                 <br>
-                <input type="password" name="pass" placeholder="Elegí tu contraseña">
-                <input type="password" name="pass_confirm" placeholder="Confirmá tu contraseña">
+                <h4>Ingresá tu Password</h4>
+
+                <input type="password" name="pass" placeholder="Password">
+                <br>
+                <input type="password" name="pass_confirm" placeholder="Confirmá tu Password">
                 <br>
                 <br>
                 <input type="submit" value="Enviar">

@@ -12,9 +12,10 @@ Familia: 'Roboto'
 Tamaños Tipográficos
 Cuerpos de texto: 12px
 Titulares (Basado en tu última visita/Ofertas): 24px
-Precios: 18px
-Descuentos: 16px
-Descripciones: 16px
+P y LI --> 14px
+Precios --> 20px
+Descuentos --> 18px
+Descripciones --> 16px
 
 
  */
@@ -36,7 +37,11 @@ h3{
 }
 
 p{
-    font-size: 12px;
+    font-size: 14px;
+}
+
+li{
+    font-size: 14px;
 }
 
 div.top-header{
@@ -153,23 +158,24 @@ div.offers{
 }
 
 .price{
-    font-size: 18px;
-    width: 30%;
+    font-size: 20px;
+    width: 90%;
 }
 
 .discount{
-    width: 70%;
+    width: 50%;
+
 }
 
 .discount,
 .description{
-    font-size: 16px;
+    font-size: 18px;
     font-weight: normal;
 }
 
 h3,
 .description{
-    color: #666;
+    color: rgb(0, 51, 19);
 }
 
 .description{
@@ -180,7 +186,7 @@ h3,
     display: block;
 }
 .producto:hover{
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    box-shadow: 0px 0px 10px rgb(2, 108, 4);
 }
 
 section.banner img{
@@ -249,7 +255,6 @@ article div.main-article{
     margin-bottom: 15px;
 }
 
-/* register register register register register register register register  */
 .register {
     margin-left: 20px;
     justify-content: center;
@@ -261,12 +266,12 @@ article div.main-article{
     margin-bottom: 2px;
     border: none;
     outline: none;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 .fechaNacimiento{
     border: none;
     outline: none;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .perfilArchivo{
