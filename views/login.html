@@ -5,38 +5,53 @@
         <title>Bienvenidxs a MercadoLiebre</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="css/styles2.css">
     </head>
     <body>
+
+
         <header>
             <div class="top-header">
-                <div class="logo"> 
-                    <img src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
-                </div>
+                
+                    <div class="logo"> 
+                        <a href="http://localhost:3000/">
+                            <img src="images/logo-mercado-liebre.svg"  alt="Logo de MercadoLiebre">
+                        </a>
+                    </div>
+                
                 <div class="form" action="#" method="GET">
-                    <div class="input">Buscar productos, marcas y más</div>
-                    <div class="submit"><i class="fa fa-search"></i></div>
+                    <input class="busqueda" type="text" placeholder="Buscá productos, marcas y más" name="busqueda">
+                     <!-- <div class="input" type="text" placeholder="">Buscar productos, marcas y más</div> --> 
+                     <!-- <div class="submit">
+                        <i class="fa fa-search"></i></div>  -->
+                       <form action="/">
+                            <!-- <input type="text" placeholder="Buscar productos, marcas y más" name="busqueda"> -->
+                             <button class="lupa"><i class="fa fa-search"></i></button>
+                        </form>
                 </div>
-                <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+                <p class="cuotas"><i class="fas fa-hand-holding-usd"></i>  Comprá en cuotas y sin tarjeta de crédito</p>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Ofertas</a></li>
-                    <li><a href="#">Tiendas Oficiales</a></li>
-                    <li><a href="#">Vender</a></li>
-                    <li><a href="#">Ayuda</a></li>
+            <nav class="navMenu">
+                <ul class="navSite">
+                    <li class="site"><a href="/ofertas">Ofertas</a></li>
+                    <li class="site"><a href="/tiendasOficiales">Tiendas Oficiales</a></li>
+                    <li class="site"><a href="/vender">Vender</a></li>
+                    <li class="site"><a href="/ayuda">Ayuda</a></li>
                 </ul>
-                <ul>
-                    <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
-                    <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
-                    <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+                <ul class="navLogin">
+                    <li class="site"><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                    <li class="site"><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                    <li class="site"><a href="/misCompras">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
                 </ul>
             </nav>
             <div class="burger-menu">
                 <i class="fa fa-bars burger"></i>
             </div>
         </header>
+
+
+        
         <main class="login">
             <form action="/" method="POST">
                 <input type="text" name="user" placeholder="Nombre de usuario">
@@ -44,8 +59,49 @@
                 <input type="submit" value="Enviar">
             </form>
         </main>
-        <footer>
 
+
+
+        <footer class="alineacion">
+            <section class="pie">
+                <section class="foot-wide">
+                    <section class="ft-icon">
+                        <i class="fa-solid fa-credit-card fa-2xl"></i>
+                    </section>
+                    <br>
+                        <h4>Pagá con tarjeta o en efectivo</h4>
+                        <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de
+                        pago. ¡Y siempre es seguro!</p>
+                        <br>
+                </section>
+                <section class="foot-wide">
+                    <section class="ft-icon">
+                        <i class="fa-solid fa-gift fa-2xl"></i>
+                    </section>
+                    <br>
+                        <h4>Envío gratis desde $4000</h4>
+                        <p>Solo por estar registrado en Mercado Liebre tenés envíos gratis en miles de
+                        productos. Es un beneficio de Mercado Puntos</p>
+                        <br>
+                </section>
+                <section class="foot-wide">
+                    <section class="ft-icon">                
+                        <i class="fa-solid fa-user-shield fa-2xl"></i>
+                    </section>
+                    <br>
+                        <h4>Seguridad, de principio a fin</h4>
+                        <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                            porque estás siempre protegido.</p>
+                </section>
+                <br>
+
+                <section class="copyright">
+                    <h5>Copyright © 1999-2022 MercadoLiebre S.R.L.</h5>
+                </section>
+            </section>
+        </footer>
+
+        
         </footer>
     </body>
 </html>

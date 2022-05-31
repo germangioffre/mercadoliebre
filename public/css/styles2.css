@@ -410,7 +410,7 @@ article div.main-article{
         align-items: flex-start;
         margin-left: 20px;
         margin-right: 20px;
-        position: relative;
+        position: absolute;
         bottom: 0;        
     }    
     .foot-wide {
@@ -438,42 +438,4 @@ article div.main-article{
         margin-bottom: 5px;
     }
 
-    /*  como hago para que en la pantalla de login, el pie sea ABSOLUTE ???
-    **/
     
-     
-
-    
-    main section div.products article{
-        width: 24%;
-    }
-    .busqueda{      
-        width:  75%;        
-    }
-    .navMenu{
-        font-size: 12px;               
-    }
-    .site{
-        margin-left: 15px;
-    }    
-    .pie{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: flex-start;
-        margin-left: 20px;
-        margin-right: 20px;
-        position: relative;
-        bottom: 0;        
-    }    
-    .foot-wide {
-        width: 33%;
-    }
-    .copyright{
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        margin-left: 10px;
-        margin-bottom: 5px;
-    }
