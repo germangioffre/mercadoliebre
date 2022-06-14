@@ -2,11 +2,11 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Bienvenidxs a MercadoLiebre</title>
+        <title>MercadoLiebre</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet"/>
-        <link rel="stylesheet" href="css/styles2.css">
+        <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
 
@@ -14,21 +14,21 @@
         <header>
             <div class="top-header">
                 
-                    <div class="logo"> 
-                        <a href="http://localhost:3000/">
+                <div class="logo"> 
+                    <li class="site">  
+                        <a href="/home">
                             <img src="images/logo-mercado-liebre.svg"  alt="Logo de MercadoLiebre">
                         </a>
-                    </div>
+                    </li>
+
+                </div>
                 
                 <div class="form" action="#" method="GET">
                     <input class="busqueda" type="text" placeholder="Buscá productos, marcas y más" name="busqueda">
-                     <!-- <div class="input" type="text" placeholder="">Buscar productos, marcas y más</div> --> 
-                     <!-- <div class="submit">
-                        <i class="fa fa-search"></i></div>  -->
                        <form action="/">
-                            <!-- <input type="text" placeholder="Buscar productos, marcas y más" name="busqueda"> -->
+                             <!-- asi se inserta un espacio  &nbsp;    -->
                              <button class="lupa"><i class="fa fa-search"></i></button>
-                        </form>
+                         </form>
                 </div>
                 <p class="cuotas"><i class="fas fa-hand-holding-usd"></i>  Comprá en cuotas y sin tarjeta de crédito</p>
             </div>
@@ -49,14 +49,22 @@
                 <i class="fa fa-bars burger"></i>
             </div>
         </header>
-
+        <section class="banner">
+            <img src="images/img-home-banner.jpg" alt="Banner de ofertas">
+        </section>
 
         
-        <main class="login">
+        <main>
             <form action="/" method="POST">
-                <input type="text" name="user" placeholder="Nombre de usuario">
-                <input type="password" name="pass" placeholder="Elegí tu contraseña">
-                <input type="submit" value="Enviar">
+                <section class="login"> <!-- el nombre de la clase lo meto aca  -->          
+                    <h4>Ingresá tus datos: </h4>
+
+                    <input class= "loginUser" type="text" name="user" placeholder="Nombre de usuario" minlength="5" required> 
+                    <input class= "loginPW" type="password" name="pass" placeholder="Contraseña" minlength="6" required >
+                    <input class= "loginEnviar" type="submit" name="enviar" value="Enviar">
+
+                </section>
+               
             </form>
         </main>
 
